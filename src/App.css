@@ -1,38 +1,213 @@
+@import url("https://fonts.googleapis.com/css2?family=Old+Standard+TT:wght@400;700&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css");
+@import url("https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900|Roboto:100,300,400,500,700,900");
+@import url("https://use.typekit.net/ywx1rjy.css");
+
+body {
+  background-image: url("C:/Users/aless/cruz-lab2/public/images/background.png");
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  background-attachment: fixed;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url("C:/Users/aless/cruz-lab2/public/images/powerpuff.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+
 .App {
   text-align: center;
+  position: relative;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+header img {
+  max-width: 79%;
+  height: auto;
+  border-radius: 4px;
+  position: absolute;
+  top: 160px;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.album-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.albums {
+  list-style: none;
+  padding: 300px 0;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.album {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 8px;
+  margin: 1em;
+  padding: 1em;
+  width: 250px;
+  text-align: center;
+}
+
+.album img {
+  max-width: 100%;
+  height: auto;
+}
+
+.album div {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.album h3 {
+  font-family: "kepler-std-condensed-subhead", Arial, Helvetica, Sans-Serif;
+  font-size: 20px;
+  text-align: left;
+  margin-right: 20px;
+  color: #36578c;
+  text-shadow: 1px 1px 5px white, -1px 1px 5px white, 1px -1px 5px white,
+    -1px -1px 5px white;
+}
+
+.album p {
+  font-family: "kepler-std-condensed-subhead", Arial, Helvetica, Sans-Serif;
+  font-size: 20px;
+  text-align: right;
+  color: #36578c;
+  font-weight: bold;
+  text-shadow: 1px 1px 5px white, -1px 1px 5px white, 1px -1px 5px white,
+    -1px -1px 5px white;
+}
+
+.newsletter {
+  margin-top: -250px;
+  font-family: "Arial", sans-serif;
+}
+
+.header-text {
+  font-family: "Old Standard TT";
+  color: rgb(91, 66, 137);
+  font-size: 20px;
+}
+
+.email-input {
+  font-family: "Old Standard TT";
+  height: 40px;
+  background: #ffffff;
+  border: 1px solid #5b4289;
+  border-radius: 0px;
+  -moz-border-radius: 0px;
+  -webkit-border-radius: 0px;
+  color: #5d438e !important;
+  font-size: 17px;
+  font-weight: 500;
+  text-align: left;
+  width: 420px;
+  padding-left: 10px;
+}
+
+.email-input::placeholder {
+  color: rgb(142, 119, 180);
+}
+
+.sign-up-button {
+  background-color: #4b0082;
   color: white;
+  font-size: 18px;
+  padding: 12px 62px;
+  cursor: pointer;
+  color: rgb(255, 255, 255);
+  font-weight: 400;
+  text-align: center;
+  letter-spacing: 0px;
+  background-color: rgb(91, 66, 137);
+  border-width: 0px;
+  border-radius: 0px;
+  font-family: "Old Standard TT";
 }
 
-.App-link {
-  color: #61dafb;
+.footer-text {
+  margin-top: 20px;
+  font-size: 8px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: rgb(152, 134, 183);
+  line-height: 24px;
+  letter-spacing: 0.02em !important;
+  text-shadow: none !important;
+  -webkit-font-smoothing: subpixel-antialiased !important;
+  text-rendering: optimizeLegibility;
+  letter-spacing: 0.05em !important;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.social-media-links {
+  margin-top: 50px;
+}
+
+footer {
+  margin-top: 20px;
+  font-family: "kepler-std-condensed-subhead", Arial, Helvetica, Sans-Serif;
+}
+
+.custom-footer {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: -50;
+  padding: 1px 0 50px;
+  background-color: #0000;
+  color: #36578c;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%;
+}
+
+.custom-footer nav a {
+  margin-right: 10px;
+}
+
+.screen-reader-info {
+  font-size: 7px;
+}
+
+.social-media-links {
+  display: flex;
+  justify-content: center;
+}
+
+.social-icon {
+  width: 52px;
+  height: 52px;
+  margin-right: 21px;
+}
+
+.small-picture {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 60px;
+  height: 60px;
+  margin-right: 30px;
+}
+
+.App {
+  text-align: center;
 }
