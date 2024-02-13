@@ -4,7 +4,7 @@
 @import url("https://use.typekit.net/ywx1rjy.css");
 
 body {
-  background-image: url("C:/Users/aless/cruz-lab2/public/images/background.png");
+  background-image: url("../public/images/background.png");
   background-size: 100%;
   background-position: center;
   background-repeat: no-repeat;
@@ -21,7 +21,7 @@ body::before {
   left: 0;
   right: 0;
   bottom: 0;
-  background-image: url("C:/Users/aless/cruz-lab2/public/images/powerpuff.png");
+  background-image: url("../public/images/powerpuff.png");
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
@@ -86,7 +86,10 @@ header img {
   text-align: left;
   margin-right: 20px;
   color: #36578c;
-  text-shadow: 1px 1px 5px white, -1px 1px 5px white, 1px -1px 5px white,
+  text-shadow:
+    1px 1px 5px white,
+    -1px 1px 5px white,
+    1px -1px 5px white,
     -1px -1px 5px white;
 }
 
@@ -96,7 +99,10 @@ header img {
   text-align: right;
   color: #36578c;
   font-weight: bold;
-  text-shadow: 1px 1px 5px white, -1px 1px 5px white, 1px -1px 5px white,
+  text-shadow:
+    1px 1px 5px white,
+    -1px 1px 5px white,
+    1px -1px 5px white,
     -1px -1px 5px white;
 }
 
