@@ -1,5 +1,4 @@
 import React from "react";
-// Import CSS file for Album component
 
 function Album({ albumObj, addToCart, removeFromCart }) {
   return (
