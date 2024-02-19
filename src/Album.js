@@ -1,14 +1,25 @@
 import React from "react";
+// Import CSS file for Album component
 
-function Album(props) {
+function Album({ albumObj, addToCart, removeFromCart }) {
   return (
     <div className="album">
       <div className="image-container">
-        <img src={props.albumObj.image} alt={props.albumObj.title} />
+        <img src={albumObj.image} alt={albumObj.title} />
       </div>
       <div>
-        <h3>{props.albumObj.title}</h3>
-        <p>{props.albumObj.description}</p>
+        <h3>{albumObj.title}</h3>
+        <p>{albumObj.description}</p>
+      </div>
+      <div>
+        {albumObj.quantity > 0 ? (
+          <>
+            <button onClick={() => addToCart(albumObj)}>Add to Cart</button>
+            <button onClick={() => removeFromCart(albumObj)}>Remove</button>
+          </>
+        ) : (
+          <p className="out-of-stock">Out of Stock</p>
+        )}
       </div>
     </div>
   );

@@ -2,7 +2,7 @@ import React from "react";
 import Album from "./Album";
 import albumData from "./albumData";
 
-function AlbumList() {
+function AlbumList({ addToCart, removeFromCart }) {
   const albumsInRows = [];
   const albumsPerRow = 3;
 
@@ -16,7 +16,12 @@ function AlbumList() {
       {albumsInRows.map((row, index) => (
         <div key={index} className="album-container">
           {row.map((album) => (
-            <Album albumObj={album} key={album.title} />
+            <Album
+              albumObj={album}
+              key={album.title}
+              addToCart={addToCart}
+              removeFromCart={removeFromCart}
+            />
           ))}
         </div>
       ))}
